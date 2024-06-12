@@ -1,25 +1,29 @@
 [UN Goal Timelines](../)
 # Data Commons
 
-We're automating multi-country timelines for [the UN Goals Section](https://datacommons.org/tools/statvar#s=dc%2Fs%2FUnitedNationsUn&d=dc%2Fd%2FUnitedNationsUn_SdgIndicatorsDatabase).  
-(After clicking the datacommon.org link, widen your browser to see the UN goals navigation on the left.)
+We're automating multi-country timelines using [Google's UN Goals Data](https://datacommons.org/tools/statvar#s=dc%2Fs%2FUnitedNationsUn&d=dc%2Fd%2FUnitedNationsUn_SdgIndicatorsDatabase).  
+After clicking the link above, widen your browser to explore the navigation on the left.
+
+Our javascript [Feed Player](/feed/view/#feed=gdc) loads and displays data from the Google Data Commons API.
+
+TO DO: Pull a simplified hierarchy from Google consisting of timeline data feeds. [GDC Python API samples](https://docs.datacommons.org/tutorials/)
+One of our UX goals is to avoid deep [hierarchy levels](https://datacommons.org/tools/statvar#s=dc%2Fs%2FUnitedNationsUn&d=dc%2Fd%2FUnitedNationsUn_SdgIndicatorsDatabase&sv=sdg%2FSI_POV_EMP1.AGE--Y15T24) by using simple [navigation filters](#geoview=countries) instead.
 
 Identify titles for data with country timelines in the [UN Data Commons (unstats.un.org)](https://unstats.un.org/UNSDWebsite/undatacommons/sdgs) created by Google.
 
+[Our Air and Climate section](air) has sample Python and an [emissions timeline chart](/data-commons/dist/air/emissions/emission.html).
 Check out how we use titles with the API call for our upcoming [Forest Coverage timeline](conservation).
 
-In the [Statistical Variable Explorer](https://datacommons.org/tools/statvar) you can filter by date and location on more than 10,000 statistical variables.
+In [Google's Statistical Variable Explorer](https://datacommons.org/tools/statvar) you can filter by date and location on more than 10,000 statistical variables.
 
-One of our UX goals is to avoid deep [hierarchy levels](https://datacommons.org/tools/statvar#s=dc%2Fs%2FUnitedNationsUn&d=dc%2Fd%2FUnitedNationsUn_SdgIndicatorsDatabase&sv=sdg%2FSI_POV_EMP1.AGE--Y15T24) by using simple [navigation filters](#geoview=countries) instead.
 
-Here are our two active CoLabs for the Google Data Commons API:
-1. [GDC-API-Caller CoLab](https://colab.research.google.com/drive/1phXc8z9IwmG9w83JTU4pXRv6XAV9a8BB?usp=sharing) - Directly calls the Google Data Commons API - Anna
-2. [GDC-Parameters CoLab](https://colab.research.google.com/drive/1mZC2Pn4oKau9Sz1Q16_qnOK7Tai09uEo?usp=sharing) - Sends parameters to our caller, then works with fetched json data - Paul  
+Here are our two CoLabs for the Google Data Commons API:
+1. [GDC-API-Caller CoLab](https://colab.research.google.com/drive/1phXc8z9IwmG9w83JTU4pXRv6XAV9a8BB?usp=sharing) - Directly calls the Google Data Commons API<!--Anna-->  
+2. [GDC-Parameters CoLab](https://colab.research.google.com/drive/1mZC2Pn4oKau9Sz1Q16_qnOK7Tai09uEo?usp=sharing) - Sends parameters to our caller, then works with fetched json data<!--Paul-->
 
 <!--
 Copy the GDC-Parameters CoLab and rename it in your goal folder: GDC-Parameters-Air, etc.
 -->
-[GDC Python API samples](https://docs.datacommons.org/tutorials/)
 
 TO DO: Call the python CoLabs from Javascript in a webpage using REST.
 
@@ -50,9 +54,11 @@ The [UN's seventeen 30-year goals](/data-pipeline/international/), plus four sub
 21. [Expanding Livable Zones](space)
 <br><br>
 
-[The Python Data Loaders](https://docs.datacommons.org/tutorials/) are simpler than the Javascript ones. We'll instead send REST from Javascript to our Python Colabs to interact with the GDC API.
+[The Python Data Loaders](https://docs.datacommons.org/tutorials/) require running in advance.  
+We're using Javascript to load in real-time using a single timeline widget.
 
-Finding DCID and property is one challenge in JavaScript, another is handling different JSON structures, which is not an issue when using the Python libraries, as can be seen in this [CoLab&nbsp;for&nbsp;Census&nbsp;Data](https://colab.research.google.com/github/datacommonsorg/api-python/blob/master/notebooks/analyzing_census_data.ipynb).
+TO DO: Find a means to load DCID and property in JavaScript. Handle different JSON structures, which is not an issue when using the Python libraries, as can be seen in this [CoLab&nbsp;for&nbsp;Census&nbsp;Data](https://colab.research.google.com/github/datacommonsorg/api-python/blob/master/notebooks/analyzing_census_data.ipynb).
+
 
 **Our Universal Filter Menus:**  
 Age  
@@ -119,4 +125,4 @@ We can probably auto-build to dist when deploying to GitHub.
 Try using the deploy.js sample Mike Bostock posted:
 https://github.com/observablehq/framework/discussions/1030
 
-[Our Setup Notes](../)
+[Our Setup Notes](../) &nbsp;|&nbsp; [Feed Player](/feed/view/#feed=gdc)
