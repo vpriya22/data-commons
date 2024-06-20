@@ -87,27 +87,34 @@ the condition of the aquifers.
 iv. Global freshwater usage from 1901-2014
 ![global-freshwater-use-over-the-long-run](https://github.com/ModelEarth/data-commons/assets/156391613/abbf2ec1-9b91-40fe-8202-bd06e572d7ce)
 
-2. Animation of timeline- 
-https://ourworldindata.org/grapher/global-freshwater-use-over-the-long-run?time=earliest..2014
 
-3. Approximately 500 million m³ in 1901 to over 4 trillion m³ in 2014
+iv. Global freshwater usage from 1901-2014
+
+1. Animation of timeline-
+   https://ourworldindata.org/grapher/global-freshwater-use-over-the-long-run?time=earliest..2014
+
+2. Approximately 500 million m³ in 1901 to over 4 trillion m³ in 2014
 
 v. Annual Freshwater withdrawals by country
+
 1. The following data showcases freshwater taken from ground or surface sources, categorized by country, and is not accounting for water evaporation in storage basins.
 
-    1. ![](https://ourworldindata.org/grapher/thumbnail/annual-freshwater-withdrawals.png?imType=og)
-
 2. Data spreadsheet: https://docs.google.com/spreadsheets/d/1pRZ6y2uWMCruZPnFF1CRdDzqkbAeAZLBjYJgf37GXk/edit?usp=sharing
+
 3. Data Visualization (animated): https://ourworldindata.org/grapher/annual-freshwater-withdrawals?time=latest
 
 vi. Renewable Freshwater Sources: To ensure water sustainability, the rate of water withdrawals will always be less than the rate of freshwater replenishment. In the case of renewable internal freshwater flow, such as internal river flow and groundwater from rainfall, are important in judging a country’s water security and scarcity.
 
 1. This following data is measured as per capita renewable resource, which takes into account the total quantity of renewable flow and size of the population.
 
-2. ![](https://ourworldindata.org/grapher/thumbnail/renewable-water-resources-per-capita.png?imType=og)
+2. Data visualization (animated) https://ourworldindata.org/grapher/renewable-water-resources-per-capita
 
-3. Data visualization (animated) https://ourworldindata.org/grapher/renewable-water-resources-per-capita
-
-4. Data Spreadsheet:  https://docs.google.com/spreadsheets/d/13xGY46AGS3xkNCu-ZYV2RrnbUHBOXfJZ7ZB5X_r6BdY/edit?usp=sharing
+3. Data Spreadsheet:  https://docs.google.com/spreadsheets/d/13xGY46AGS3xkNCu-ZYV2RrnbUHBOXfJZ7ZB5X_r6BdY/edit?usp=sharing
 
 vii. For more information and data on freshwater: [Water Use and Stress - Our World in Data](https://ourworldindata.org/water-use-stress)
+
+
+vii. For more information and data on freshwater: [Water Use and Stress - Our World in Data](https://ourworldindata.org/water-use-stress)
+
+Google doc link: <https://docs.google.com/document/d/1sSe9RIu3HPI25-LpC-ejj-Q9GIxgKq1VcUYmjRaKjhI/edit?usp=sharing>
+
