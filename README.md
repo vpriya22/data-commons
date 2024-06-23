@@ -1,11 +1,13 @@
 [Data Pipeline](../data-pipeline/)
 # UN Goal Timelines
 
+TO DO: Generate timeline data from Google Data Commons - See our [Data Commons Timelines CoLab](https://colab.research.google.com/drive/1PF8wojIOHxDCdmadsAdkpHnb-An1ymEh?usp=sharing)
+
 [Our Built Data Commons (dist)](dist/) and [Our UnBuilt src files (docs)](docs/)
 
 [Google UN Data Commons Nav for API](https://datacommons.org/tools/statvar#s=dc%2Fs%2FUnitedNationsUn&d=dc%2Fd%2FUnitedNationsUn_SdgIndicatorsDatabase) - Widen screen to explore root of 17 UN Goals
 
-TO DO: Load the nav tree with Python via the GDC API, parse into a simple json file containing API variables for timeline datasets. See GDC API calls in our [forest timeline data feed sample](../feed/view/#feed=LandCoverFraction_Forest).
+TO DO: Load the UN Goals nav tree with Python via the GDC API, save as a json file.
 
 TO DO: Save timeline titles from GDC API as a json file using [Observable Data Loader](https://observablehq.com/framework/loaders). See our [Weather Data Loader notes](docs/air/). Save in a new folder at data-commons/docs/google
 
