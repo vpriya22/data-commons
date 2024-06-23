@@ -1,15 +1,18 @@
 [Data Pipeline](../data-pipeline/)
 # UN Goal Timelines
 
+[Our Development Folders (docs)](docs/) and [Built Output (dist)](dist/)
+
+[Google UN Data Commons Nav for API](https://datacommons.org/tools/statvar#s=dc%2Fs%2FUnitedNationsUn&d=dc%2Fd%2FUnitedNationsUn_SdgIndicatorsDatabase) - Widen your screen to explore root of 17 UN Goals.  
+Display 21 "GOALS" in our left navigation by turning on "Dev Mode" under Settings in the upper right.
+
+## Projects
+
 TO DO: Generate timeline data from Google Data Commons - See our [Data Commons Timelines CoLab](https://colab.research.google.com/drive/1PF8wojIOHxDCdmadsAdkpHnb-An1ymEh?usp=sharing)
 
-[Our Built Data Commons (dist)](dist/) and [Our UnBuilt src files (docs)](docs/)
+TO DO: Load the UN Goals nav tree with Python via the GDC API, save as a json file. Create a clean hierarchy with only 2 or 3 levels. Narrow to data usable in visualizations. The Colab above might use this process.
 
-[Google UN Data Commons Nav for API](https://datacommons.org/tools/statvar#s=dc%2Fs%2FUnitedNationsUn&d=dc%2Fd%2FUnitedNationsUn_SdgIndicatorsDatabase) - Widen screen to explore root of 17 UN Goals
-
-TO DO: Load the UN Goals nav tree with Python via the GDC API, save as a json file.
-
-TO DO: Save timeline titles from GDC API as a json file using [Observable Data Loader](https://observablehq.com/framework/loaders). See our [Weather Data Loader notes](docs/air/). Save in a new folder at data-commons/docs/google
+TO DO: Use the upcoming timeline CSV files in docs/innovation data with an [Observable Data Loader](https://observablehq.com/framework/loaders). See our [Weather Data Loader notes](docs/air/). 
 
 TO DO: Display our [US Industry Timelines](../data-pipeline/timelines/) within the same timeline display process.
 
@@ -18,7 +21,9 @@ TO DO: Display our [US Industry Timelines](../data-pipeline/timelines/) within t
 <!--
 	TO DO: Display all 17 Global Goal indicator lines on one large 30-year timeline chart with projections.<br><br>
 -->
-Moonshots: [Push EPA data to GDC and Reuse GDC LLM for Visual Searches](../../localsite/info/data/datacommons/)
+
+[More Active Projects](/projects)
+
 
 ## Making Updates
 
