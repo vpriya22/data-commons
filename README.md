@@ -10,6 +10,8 @@ Display 21 "GOALS" in our left navigation by turning on "Dev Mode" under Setting
 
 TO DO: Generate timeline data from Google Data Commons - See our [Data Commons Timelines CoLab](https://colab.research.google.com/drive/1PF8wojIOHxDCdmadsAdkpHnb-An1ymEh?usp=sharing)
 
+[Observable Data Loaders](https://observablehq.com/framework/loaders) can be used to pre-save data, but python in a CoLab is easier to collaborate on.
+
 TO DO: Load the UN Goals nav tree with Python via the GDC API, save as a json file. Create a clean hierarchy with only 2 or 3 levels. Narrow to data usable in visualizations. The Colab above might use this process.
 
 TO DO: Use the upcoming timeline CSV files in docs/innovation data with an [Observable Data Loader](https://observablehq.com/framework/loaders). See our [Weather Data Loader notes](docs/air/). 
