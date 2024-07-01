@@ -6,6 +6,8 @@ Goal 6. Abundant Clean Water and Cyclical Sanitation
 
 ## a. Groundwater
 
+[Our CoLab for Freashwater](https://colab.research.google.com/drive/1KxwpgNZw95919JhKsUI-6bvYcoI9TpCn?usp=sharing)
+
 <h3>**Premise**</h3>- As countries become more urbanized with their economies shifting towards more resource-intensive consumptions, global freshwater usage has increased. However, freshwater, itself, is a scarce resource with only about 3% of our planet’s water being freshwater. The main difference between freshwater and the rest of our world’s water is that freshwater is water containing less than [1,000mg per liter of dissolved solids (salt)](https://www.usgs.gov/special-topics/water-science-school/science/freshwater-lakes-and-rivers-and-water-cycle#overview).
 
 <h3>**Breakdown of plas water**</h3>
