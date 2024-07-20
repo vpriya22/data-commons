@@ -1,4 +1,4 @@
-[Data Pipeline](../data-pipeline/)
+[Data Pipeline](../data-pipeline/) and [Active Projects](/projects)
 # UN Goal Timelines
 
 [Our Development Folders (docs)](docs/) and [Built Output (dist)](dist/)
@@ -8,23 +8,23 @@ Display 21 "GOALS" in our left navigation by turning on "Dev Mode" under Setting
 
 ## Projects
 
-TO DO: Generate timeline data from Google Data Commons - See our [Data Commons Timelines CoLab](https://colab.research.google.com/drive/1PF8wojIOHxDCdmadsAdkpHnb-An1ymEh?usp=sharing)
+IN PROGRESS - [Javascript Timelines from Google Data Commons API](/data-pipeline/timelines/earthscape/datacommons.html) - Mehul
+
+TO DO: Load the UN Goals timeline nav tree from the GDC API. Display a clean hierarchy with only 2 or 3 levels. Narrow to data usable in visualizations. The Colab above might use this process.
+
+[Data Commons Timelines CoLab](https://colab.research.google.com/drive/1PF8wojIOHxDCdmadsAdkpHnb-An1ymEh?usp=sharing)
 
 [Observable Data Loaders](https://observablehq.com/framework/loaders) can be used to pre-save data, but python in a CoLab is easier to collaborate on.
 
-TO DO: Load the UN Goals nav tree with Python via the GDC API, save as a json file. Create a clean hierarchy with only 2 or 3 levels. Narrow to data usable in visualizations. The Colab above might use this process.
+CSV files in docs/innovation data with an [Observable Data Loader](https://observablehq.com/framework/loaders). See our [Weather Data Loader notes](docs/air/). 
 
-TO DO: Use the upcoming timeline CSV files in docs/innovation data with an [Observable Data Loader](https://observablehq.com/framework/loaders). See our [Weather Data Loader notes](docs/air/). 
-
-TO DO: Display our [US Industry Timelines](../data-pipeline/timelines/) within the same timeline display process.
+TO DO: Display our [US Industry Timelines](../data-pipeline/timelines/) using common timeline javascript from javascript timelines above.
 
 <!--[worldbank.org indicators](https://github.com/phiresky/world-development-indicators-sqlite/)-->
 
 <!--
 	TO DO: Display all 17 Global Goal indicator lines on one large 30-year timeline chart with projections.<br><br>
 -->
-
-[More Active Projects](/projects)
 
 
 ## Making Updates
