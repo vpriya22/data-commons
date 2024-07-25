@@ -58,14 +58,24 @@ TO DO: Replace the above image with linked images and interactivity by finding a
 
 This is an [Observable Framework](https://observablehq.com/framework) project. 
 Run once daily when you start - updates dependencies defined in [package.json](package.json):
+This is the same as running `yarn install`
 
-	yarn install
+	yarn
 
-To build - this pulls from APIs and outputs from "[docs](docs)" to static files in "[dist](dist)":
+If you don't have yarn yet, install it with `npm install --global yarn`
+You can check if you have yarn with `yarn --version`
+
+**Build the data-commons project locally**
+This pulls from APIs and outputs from "[docs](docs)" to static files in "[dist](dist)".
+You won't be deploying changes to "dist" because numerous merge conflicts occur.
+Contact Loren to build and deploy your changes to dist.
 
 	yarn build
 
-The following is an alternative to using `yarn dev` (which you'd use if only viewing dist)
+The following is an alternative to using `yarn build` with `yarn dev` 
+You can use this to view the content of dist locally at:
+[http://localhost:8887/data-commons/dist](http://localhost:8887/data-commons/dist)
+
 
 This setup allows you to view multiple repos in one webroot.
 If you haven't yet, start an http server in your webroot, external to the data-commons folder.
@@ -82,7 +92,7 @@ Then visit the following to view:
 <http://localhost:8887/data-commons/dist>
 <http://localhost:8887/data-commons/docs>
 
-Turn on GitHub Pages for both repos so we can preview changes.
+Turn on GitHub Pages for any repos you fork so we can preview changes at [youraccount].github.io.
 
 
 For more, see <https://observablehq.com/framework/getting-started>.
