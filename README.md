@@ -10,7 +10,8 @@ Display 21 "GOALS" in our left navigation by turning on "Dev Mode" under Setting
 
 IN PROGRESS - [Javascript Timelines from Google Data Commons API](/data-pipeline/timelines/earthscape/datacommons.html) - Mehul
 
-TO DO: Load the UN Goals timeline nav tree from the GDC API. Display a clean hierarchy with only 2 or 3 levels. Narrow to data usable in visualizations. The following Colab could use this process.
+TO DO: Add UN Goal DCIDs to [Google Sheet](/localsite/info/data/map-filters/) for timeline data.  
+Python will pull list from sheet to generate .csv files for locations.
 
 [Data Commons Timelines CoLab](https://colab.research.google.com/drive/1PF8wojIOHxDCdmadsAdkpHnb-An1ymEh?usp=sharing)
 
