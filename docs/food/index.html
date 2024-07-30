@@ -7,6 +7,13 @@
 <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<!-- javascript included early for use by nutrition label -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" id="/localsite/js/jquery.min.js"></script>
+
+<!--
+<script type="text/javascript" src="/localsite/js/jquery.min.js" id="/localsite/js/jquery.min.js"></script>
+-->
 <script type="text/javascript" src="https://model.earth/localsite/js/localsite.js?showheader=true"></script>
 
 <script>
@@ -97,7 +104,7 @@ $('#test2').nutritionLabel({
     <button onclick="handleSearch()" class="search-button">Search</button>
 </div>
 
-TO DO: Use the following json from loadDataFood() to display a <a href="https://model.earth/nutrition-label/dist/demo/demo.html">Nutritionix Label</a> using <a href="https://github.com/ModelEarth/nutrition-label">our fork</a><br>
+TO DO: Use the following json from loadDataFood() to display a <a href="https://model.earth/nutrition-label/demo/demo.html">Nutritionix Label</a> using <a href="https://github.com/ModelEarth/nutrition-label">our fork</a><br>
 <div id="resultJson" style="max-height:150px;overflow-y:scroll;border:1px solid #ccc; padding:10px"></div>
 <br><br>
 
@@ -133,15 +140,15 @@ TO DO: Use the following json from loadDataFood() to display a <a href="https://
 </div>
 
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
-<link rel='stylesheet' type='text/css' media='all' href='../../../nutrition-label/dist/css/nutritionLabel-min.css'>
-<link rel='stylesheet' type='text/css' media='all' href='../../../nutrition-label/dist/demo/css/demo.css'>
+<link rel='stylesheet' type='text/css' media='all' href='../../../nutrition-label/nutritionLabel-min.css'>
+<link rel='stylesheet' type='text/css' media='all' href='../../../nutrition-label/demo/css/demo.css'>
 
 <!-- google webfont for nutrition label -->
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Archivo+Black" />
 
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="text/javascript" src="../../../nutrition-label/dist/js/nutritionLabel-min.js"></script>
+<!--
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+<script type="text/javascript" src="../../../nutrition-label/nutritionLabel.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
     eval( eval( $('#pre2').html() ) );

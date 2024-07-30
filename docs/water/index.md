@@ -4,6 +4,8 @@
 
 Goal 6. Abundant Clean Water and Cyclical Sanitation...
 
+[Humans pump so much groundwater that Earth’s axis has shifted, 2024 study finds | CNN](https://www.cnn.com/2023/06/26/world/pumping-groundwater-earth-axis-shifting-scn)
+
 ## a. Groundwater
 
 [Our CoLab](https://colab.research.google.com/drive/1KxwpgNZw95919JhKsUI-6bvYcoI9TpCn?usp=sharing)
