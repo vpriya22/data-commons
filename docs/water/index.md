@@ -119,9 +119,7 @@ The following data presents the data of freshwater use (groundwater, surface wat
 
    <iframe src="https://ourworldindata.org/grapher/renewable-water-resources-per-capita?tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
 
-#### Data Sheet:
-
-<https://docs.google.com/spreadsheets/d/13xGY46AGS3xkNCu-ZYV2RrnbUHBOXfJZ7ZB5X_r6BdY/edit?usp=sharing>
+Google Data Sheet: <a href="https://docs.google.com/spreadsheets/d/13xGY46AGS3xkNCu-ZYV2RrnbUHBOXfJZ7ZB5X_r6BdY/edit?usp=sharing">Renewable water resources per capita</a>
 
 For more information and data on freshwater: [Water Use and Stress - Our World in Data](https://ourworldindata.org/water-use-stress)
 
