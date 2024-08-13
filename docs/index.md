@@ -8,7 +8,7 @@ Our javascript [Feed Player](/feed/view/#feed=gdc) loads and displays data from 
 
 ## Goal Visualization
 
-The [UN's seventeen 30-year goals](/data-pipeline/international/), plus four subsets of goal 9: Innovation.
+The [UN's seventeen 30-year goals](/data-pipeline/international/), plus five subsets of Goal 9: Innovation.
 
 0. [Full Aquifers](water)
 1. [Great Jobs](jobs)
