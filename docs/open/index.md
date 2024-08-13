@@ -1,15 +1,14 @@
 [Data Commons](../)
 
-# Inclusion
+# Open and Inclusive
 
 Goal 10. Reducing Inequalities
 
-Open Opportunities that Expand Possibilities
+Opportunities that Expand Possibilities
 
-Which countries are making fast progress
-toward increasing middle&nbsp;income&nbsp;wealth?
+Which countries are making fast progress toward increasing middle&nbsp;income&nbsp;wealth?
 
-What's their recipe for success reducing inequalities?
+What's their recipe for success in reducing inequalities?
 
 We'll be charting solutions that:
 

@@ -8,16 +8,13 @@ Display 21 "GOALS" in our left navigation by turning on "Dev Mode" under Setting
 
 ## Projects
 
-IN PROGRESS - [Javascript Timelines from Google Data Commons API](/data-pipeline/timelines/earthscape/datacommons.html) - Mehul
+IN PROGRESS - [Javascript Timelines from Google Data Commons API](/data-pipeline/timelines/earthscape/datacommons.html#country=IN,CN,US) - Mehul
 
-TO DO: Add UN Goal DCIDs to [Google Sheet](/localsite/info/data/map-filters/) for timeline data.  
-Python will pull list from sheet to generate .csv files for locations.
+IN PROGRESS - Python from Google DCIDs in [UN Goal topics Google Sheet](/localsite/info/data/map-filters/) for timeline data.  
+Python will pull list from sheet to generate .csv files for locations. - Pratyush, Jack, Abhishek L  
 
-[Data Commons Timelines CoLab](https://colab.research.google.com/drive/1PF8wojIOHxDCdmadsAdkpHnb-An1ymEh?usp=sharing)
-
-[Observable Data Loaders](https://observablehq.com/framework/loaders) can be used to pre-save data, but python in a CoLab is easier to collaborate on.
-
-CSV files in docs/innovation data use the [Observable Data Loader](https://observablehq.com/framework/loaders). See our [Weather Data Loader notes](docs/air/). 
+[Observable Data Loaders](https://observablehq.com/framework/loaders) can be used to pre-save data, but python in a CoLab is easier to collaborate on.  
+See our [Weather Data Loader notes](docs/air/) and [DuckDB sample](/data-commons/dist/innovation/) 
 
 TO DO: Display our [US Industry Timelines](../data-pipeline/timelines/) using common timeline javascript in [localsite/js/earthscape.js](/localsite/js/earthscape.js).
 

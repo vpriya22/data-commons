@@ -14,7 +14,7 @@ export default {
     {name: "2. Healthy Food", path: "/food"},
     {name: "3. Excellent Health", path: "/health"},
     {name: "4. Quality Education", path: "/education"},
-    {name: "5. Gender Equality", path: "/women"},
+    {name: "5. Gender Equality", path: "/opportunity"},
     {name: "6. Clean Water", path: "/water"},
     {name: "7. Energy", path: "/energy"},
     {name: "8. Vibrant Economies", path: "/economy"},
