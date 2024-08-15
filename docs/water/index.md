@@ -2,7 +2,7 @@
 
 # Sustainable Clean Water Sources
 
-Goal 6. Abundant Clean Water and Cyclical Sanitation
+Goal 6. Abundant Clean Water and Cyclical Sanitation. Aquifers Recharged.
 
 
 ## Groundwater
