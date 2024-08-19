@@ -1,8 +1,6 @@
 [Data Pipeline](../data-pipeline/) and [Active Projects](/projects)
 # UN Goal Timelines
 
-[Our Development Folders (docs)](docs/) and [Built Output (dist)](dist/)
-
 [Google UN Data Commons Nav for API](https://datacommons.org/tools/statvar#s=dc%2Fs%2FUnitedNationsUn&d=dc%2Fd%2FUnitedNationsUn_SdgIndicatorsDatabase) - Widen your screen to explore root of 17 UN Goals.  
 Display 21 "GOALS" in our left navigation by turning on "Dev Mode" under Settings in the upper right.
 
@@ -10,10 +8,8 @@ Display 21 "GOALS" in our left navigation by turning on "Dev Mode" under Setting
 
 TO DO: [Javascript Timelines from Google Data Commons API](/data-pipeline/timelines/earthscape/datacommons.html#country=IN,CN,US)
 
-TO DO: [Python with UN Goal topics Google Sheet](/localsite/info/data/map-filters/) for timeline data.  
-Python will pull list from sheet to generate .csv files for locations. 
 
-TO DO: Display our [US Industry Timelines](../data-pipeline/timelines/) using common timeline javascript in [localsite/js/earthscape.js](/localsite/js/earthscape.js).
+TO DO: Combine our [Earthscape Tabulator](../data-pipeline/timelines/training/naics/) with our [chartJS Google timeline display](/data-pipeline/timelines/earthscape/datacommons.html#country=IN,CN,US) by adding to [earthscape.js](/localsite/js/earthscape.js).
 
 <!--[worldbank.org indicators](https://github.com/phiresky/world-development-indicators-sqlite/)-->
 
@@ -21,11 +17,17 @@ TO DO: Display our [US Industry Timelines](../data-pipeline/timelines/) using co
 	TO DO: Display all 17 Global Goal indicator lines on one large 30-year timeline chart with projections.<br><br>
 -->
 
-[Observable Data Loaders](https://observablehq.com/framework/loaders) can be used to pre-save data, but python in a CoLab is easier to collaborate on.  
+TO DO: [Python with UN Goal topics Google Sheet](docs/data/) for larger timeline datasets to be used by [RealityStream](/RealityStream/).
+
+
+Pre-saving .csv files using python in our CoLabs is easier to collaborate on than [Observable Data Loaders](https://observablehq.com/framework/loaders).
+
 See our [Weather Data Loader notes](docs/air/) and [DuckDB sample](/data-commons/dist/innovation/) 
 
 
 ## Making Updates
+
+[Our Development Folders (docs)](docs/) and [Built Output (dist)](dist/)
 
 After [creating your webroot](../../localsite/start/steps/) and pulling down [data-commons](https://github.com/modelearth/data-commons), edit pages and build your static site to update the local "dist" folder.
 
