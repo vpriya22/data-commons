@@ -8,13 +8,10 @@ Display 21 "GOALS" in our left navigation by turning on "Dev Mode" under Setting
 
 ## Projects
 
-IN PROGRESS - [Javascript Timelines from Google Data Commons API](/data-pipeline/timelines/earthscape/datacommons.html#country=IN,CN,US) - Mehul
+TO DO: [Javascript Timelines from Google Data Commons API](/data-pipeline/timelines/earthscape/datacommons.html#country=IN,CN,US)
 
-IN PROGRESS - Python from Google DCIDs in [UN Goal topics Google Sheet](/localsite/info/data/map-filters/) for timeline data.  
-Python will pull list from sheet to generate .csv files for locations. - Pratyush, Jack, Abhishek L  
-
-[Observable Data Loaders](https://observablehq.com/framework/loaders) can be used to pre-save data, but python in a CoLab is easier to collaborate on.  
-See our [Weather Data Loader notes](docs/air/) and [DuckDB sample](/data-commons/dist/innovation/) 
+TO DO: [Python with UN Goal topics Google Sheet](/localsite/info/data/map-filters/) for timeline data.  
+Python will pull list from sheet to generate .csv files for locations. 
 
 TO DO: Display our [US Industry Timelines](../data-pipeline/timelines/) using common timeline javascript in [localsite/js/earthscape.js](/localsite/js/earthscape.js).
 
@@ -23,6 +20,9 @@ TO DO: Display our [US Industry Timelines](../data-pipeline/timelines/) using co
 <!--
 	TO DO: Display all 17 Global Goal indicator lines on one large 30-year timeline chart with projections.<br><br>
 -->
+
+[Observable Data Loaders](https://observablehq.com/framework/loaders) can be used to pre-save data, but python in a CoLab is easier to collaborate on.  
+See our [Weather Data Loader notes](docs/air/) and [DuckDB sample](/data-commons/dist/innovation/) 
 
 
 ## Making Updates
