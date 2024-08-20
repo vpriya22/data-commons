@@ -22,7 +22,7 @@ TO DO: [Python with UN Goal topics Google Sheet](docs/data/) for larger timeline
 
 Pre-saving .csv files using python in our CoLabs is easier to collaborate on than [Observable Data Loaders](https://observablehq.com/framework/loaders).
 
-See our [Weather Data Loader notes](docs/air/) and [DuckDB sample](/data-commons/dist/innovation/) 
+See our [Data Loader notes on Weather API](docs/air/) and [DuckDB Parquet display sample](/data-commons/dist/innovation/) 
 
 
 ## Making Updates

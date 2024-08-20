@@ -5,7 +5,7 @@
 Goal 6. Abundant Clean Water and Cyclical Sanitation. Aquifers Recharged.
 
 
-## Groundwater
+## Rechaging Groundwater
 
 [Humans pump so much groundwater that Earth’s axis has shifted](https://www.cnn.com/2023/06/26/world/pumping-groundwater-earth-axis-shifting-scn) -  2024 study
 Once removed, rocks formations collapse, the ground level drops, and aquifers can not be refilled.
