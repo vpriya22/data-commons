@@ -23,3 +23,22 @@ TO DO: From the sheet columns, display a navigation hierarchy with 3 levels usin
 
 Goal (Air) > Topic (Emissions) > Subtopic (Methane)
 
+
+SPECS:
+
+We'll create one function in the CoLab that generates all versions of the timelines.
+
+We'll pass the function the column LocationType as: Country, State, County
+
+We'll convert from 3 to 2-char country codes.
+
+We'll send rules in the function's parameters to identify which locations to omit (like which countries lack emissions data).
+
+We'll send the valid year range. 
+
+The rules can reside in each DCID row in the Google Sheet.
+
+Initial [timeline output Abhishek created](https://github.com/ModelEarth/community-data/blob/master/locations/datacommons/Country.csv).
+
+We'll send our .csv output to UN Goal subfolders at [data-commons/docs/data](https://github.com/ModelEarth/data-commons/tree/main/docs/data)
+
