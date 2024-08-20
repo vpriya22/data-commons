@@ -34,7 +34,7 @@ We'll convert from 3 to 2-char country codes.
 
 We'll send rules in the function's parameters to identify which locations to omit (like which countries lack emissions data).
 
-We'll send the valid year range. 
+We'll pull the valid year range from the Google Sheet row. 
 
 The rules can reside in each DCID row in the Google Sheet.
 
