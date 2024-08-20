@@ -9,7 +9,7 @@ Our javascript [Feed Player](/feed/view/#feed=gdc) loads and displays data from 
 
 The [UN's seventeen 30-year goals](/data-pipeline/international/), plus five subsets of Goal 9: Innovation.
 
-<span style="color:#999">★</span> [Groundwater](water)
+<span style="color:#999">★</span> [Groundwater Recharged](water)
 1\. [Great Jobs](jobs)
 2\. [Healthy Food](food)
 3\. [Excellent Health](health)
