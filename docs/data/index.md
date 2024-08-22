@@ -2,9 +2,7 @@
 
 # UN Goal Timelines - Data Pull
 
-Our [Javascript timeline display](/data-pipeline/timelines/earthscape/datacommons.html#country=IN,CN,US) will use the same Google Sheet.
-
-TO DO: Update our [UN Goals CoLab](https://colab.research.google.com/drive/1riRnKUGNGkJZOU6qJoznAxjySInQjnFQ?usp=sharing) to pull DCID's from our <a href="https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/edit?usp=sharing" target="googleUnGoals">Google Sheet with Goal tabs</a>
+TO DO: Update our [UN Goals CoLab](https://colab.research.google.com/drive/1riRnKUGNGkJZOU6qJoznAxjySInQjnFQ?usp=sharing) to pull DCID's from our <a href="https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/edit?usp=sharing" target="googleUnGoals">Google Sheet Goal tabs</a>
 
 TO DO: Save .csv files to GitHub using tokens. - Ivy
 <!--
