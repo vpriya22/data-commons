@@ -19,7 +19,7 @@ TO DO: Update our [Google Sheet UN Goal tabs](https://docs.google.com/spreadshee
 TO DO: Also update our [Data Commons Timelines CoLab](https://colab.research.google.com/drive/1PF8wojIOHxDCdmadsAdkpHnb-An1ymEh?usp=sharing)
 -->
 
-TO DO: From the sheet columns, display a navigation hierarchy with 3 levels using javascript. Here's [.csv for the "Air" tab](https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=0&single=true&output=csv).  
+TO DO: From the sheet columns, populate the #chartVariable dropdown.  Here's [.csv for the "Air" tab](https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=0&single=true&output=csv).  
 
 Goal (Air) > Topic (Emissions) > Subtopic (Methane)
 
