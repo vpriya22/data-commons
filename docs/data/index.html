@@ -43,6 +43,61 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+function loadGoalsDropdown() {
+
+    if (!onlineApp) {
+      alert("onlineApp=false in localsite.js so not pulling from Google Sheet")
+      return;
+    }
+    loadScript(theroot + 'js/d3.v5.min.js', function(results) {
+    waitForVariable('customD3loaded', function() {
+    dp = {};
+    dp.googleCSV = "https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=456266073&single=true&output=csv";
+    consoleLog("Google data requested " + dp.googleCSV);
+    //dp.googleCSV = "DISABLEX"
+    d3.csv(dp.googleCSV).then(function(data,error) { // One element containing all rows from spreadsheet
+
+      consoleLog("Google data loaded");
+      // LOAD GOOGLE SHEET
+        //dp.data = makeRowValuesNumeric(data, dp.numColumns, dp.valueColumn);
+        dp.data = data;
+
+        
+        // TO DO: NEEDS WOK - this is a quick copy from another script.  Rewrite this...
+
+          d3.csv(dp.googleCategories).then(function(data) {
+
+            // TO DO Loop through data and check for commas:
+            for (let i = 0; i < data.length; i++) {
+              //console.log("Are we reaching hear with wastewater?");
+              if (data[i]) {
+                  //console.log("data.key: ");
+                  //console.log(data[i]);
+              }
+            }
+
+            // LOAD CATEGORIES TAB - Category, SubCategory, SubCategoryLong
+            //localObject.unGoals[dp.show] = makeRowValuesNumeric(data, dp.numColumns, dp.valueColumn);
+            
+            // The category look up, not the actual counts.
+            localObject.unGoals[dp.show] = data;
+
+            console.log("FOR CATEGORIES NAV - Some may not be used")
+            console.log(localObject.unGoals[dp.show]); // Include color for mappoint at this point.
+          });
+    }, function(error, rows) {
+        consoleLog("ERROR fetching google sheet. " + error);
+        // if not 404, try again here after .5 second settimeout. Display status in browser.
+
+        setTimeout(function() {
+          attempts = attempts + 1;
+          loadDataset(whichmap,whichmap2,dp,basemaps1,basemaps2,attempts,callback);
+        }, 500);
+    });
+    });
+    });
+}
+loadGoalsDropdown();
 </script>
 
 <style>
