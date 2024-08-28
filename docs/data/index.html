@@ -60,39 +60,43 @@ function loadGoalsDropdown() {
       consoleLog("Google data loaded");
       // LOAD GOOGLE SHEET
         //dp.data = makeRowValuesNumeric(data, dp.numColumns, dp.valueColumn);
-        dp.data = data;
+        //dp.data = data;
 
         
         // TO DO: NEEDS WOK - this is a quick copy from another script.  Rewrite this...
 
-          d3.csv(dp.googleCategories).then(function(data) {
 
-            // TO DO Loop through data and check for commas:
+            // Loop through data
+            let goalsString = "";
             for (let i = 0; i < data.length; i++) {
               //console.log("Are we reaching hear with wastewater?");
               if (data[i]) {
-                  //console.log("data.key: ");
-                  //console.log(data[i]);
+                  console.log("data.key: ");
+                  console.log(data[i]);
+                  goalsString = goalsString + data[i].Goal + "<br>";
               }
             }
+            $("#goalsDiv").html(goalsString);
 
             // LOAD CATEGORIES TAB - Category, SubCategory, SubCategoryLong
             //localObject.unGoals[dp.show] = makeRowValuesNumeric(data, dp.numColumns, dp.valueColumn);
             
-            // The category look up, not the actual counts.
-            localObject.unGoals[dp.show] = data;
+            // Save to avoid repeat calls to Google Sheet tab
+            let tabName = "all"
 
-            console.log("FOR CATEGORIES NAV - Some may not be used")
-            console.log(localObject.unGoals[dp.show]); // Include color for mappoint at this point.
-          });
+            if(typeof localObject == 'undefined') {
+                var localObject = {};
+            }
+            if(typeof localObject.unGoals == 'undefined') {
+                localObject.unGoals = {}; // From Google Sheet tabs.
+            }
+            localObject.unGoals[tabName] = data;
+
+            console.log("UN Goal Google Sheet")
+            console.log(localObject.unGoals[tabName]); // Include color for mappoint at this point.
+          
     }, function(error, rows) {
         consoleLog("ERROR fetching google sheet. " + error);
-        // if not 404, try again here after .5 second settimeout. Display status in browser.
-
-        setTimeout(function() {
-          attempts = attempts + 1;
-          loadDataset(whichmap,whichmap2,dp,basemaps1,basemaps2,attempts,callback);
-        }, 500);
     });
     });
     });
@@ -189,7 +193,13 @@ Our <a href="/data-pipeline/timelines/earthscape/datacommons.html#country=IN,CN,
   <canvas id="timelineChart"></canvas>
   <br>
 
-  <div id="readmeDiv"></div>
+  <div id="readmeDiv"></div><br>
+
+  <hr>
+  TO DO: The following is pulled from the Google Sheet. Send the "Goals" tab list to a "goals" dropdown, and the other tabs to "timelines" dropdown, or sen their DCID and name to the #chartVariable dropdown above.<br><br>
+  
+  <div id="goalsDiv"></div>
+
 </div>
 
 </body>
