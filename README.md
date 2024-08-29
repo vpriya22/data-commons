@@ -9,7 +9,7 @@ Or display 21 "GOALS" in our left navigation by turning on "Dev Mode" under Sett
 TO DO: [County Timelines](/data-commons/docs/data/) and [Country & State Timelines](/data-pipeline/timelines/earthscape/datacommons.html#country=IN,CN,US) from Google Data Commons API
 
 
-TO DO: Combine our [Earthscape Tabulator](../data-pipeline/timelines/training/naics/) with our [chartJS Google timeline display](/data-pipeline/timelines/earthscape/datacommons.html#country=IN,CN,US) by adding to [earthscape.js](/localsite/js/earthscape.js).
+TO DO: Combine our [Earthscape Tabulator](../data-pipeline/timelines/training/naics/) with our [chartJS timeline display](/data-commons/docs/data/) by adding to [earthscape.js](/data-commons/docs/data/js/earthscape.js).
 
 <!--[worldbank.org indicators](https://github.com/phiresky/world-development-indicators-sqlite/)-->
 

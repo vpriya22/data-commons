@@ -2,7 +2,9 @@
 
 # UN Goal Timelines - Data Pull
 
-TO DO: Update our [UN Goals CoLab](https://colab.research.google.com/drive/1riRnKUGNGkJZOU6qJoznAxjySInQjnFQ?usp=sharing) to pull DCID's from our <a href="https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/edit?usp=sharing" target="googleUnGoals">Google Sheet Goal tabs</a> - Priyanka, Alexandra, everyone
+Our [Map Filter Colab](https://colab.research.google.com/drive/1riRnKUGNGkJZOU6qJoznAxjySInQjnFQ?usp=sharing) outputs for one  for our [Map Nav](#geoview=country).
+
+TO DO: Update our [UN Goals CoLab](https://colab.research.google.com/drive/1LZC8ot8skRMtD4DnokDjYXH6B73WinYP?usp=sharing) to pull DCID's from our <a href="https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/edit?usp=sharing" target="googleUnGoals">Google Sheet Goal tabs</a> - Priyanka, Alexandra, everyone
 
 TO DO: Save .csv files to GitHub using tokens. - Ivy
 <!--
@@ -12,6 +14,7 @@ TO DO: Save .csv files to GitHub using tokens. - Ivy
 <!--
 Abhishek L may also have .ipynb files that generate .csv files locally. The output .csv could be sent to a fork of [data-commons](https://github.com/ModelEarth/data-commons) in a folder added at data-common/docs/data.
 -->
+UN Goals Timelines
 
 TO DO: Update our [Google Sheet UN Goal tabs](https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/edit?usp=sharing) with additional DCID values that we'll pull for our Python .csv file generation. - Everyone <!--Pratyush-->
 
@@ -26,11 +29,15 @@ Goal (Air) > Topic (Emissions) > Subtopic (Methane)
 TO DO: [country.csv timeline output Abhishek created](https://github.com/ModelEarth/community-data/blob/master/locations/datacommons/country.csv) can be output to data-commons/docs/data/air/[dcid].csv.  
 Then delete the country.csv file
 
+TO DO: The DCID value for the water UN Goal topics is: `dc/g/SDG_6`  
+Fix the following so we can update [/feed/view/#feed=water](/feed/view#feed=water) to pull the water nav DCID  
+`https://api.datacommons.org/v2/observation?key=AIzaSyCTI4Xz-UW_G2Q2RfknhcfdAnTHq5X5XuI&entity.dcids=dc/g/SDG_6`
+
 ---
 
 SPECS:
 
-In the CoLab, create one function called earthColab that generates all versions of the timeline csv files.
+In the [UN Goals CoLab](https://colab.research.google.com/drive/1LZC8ot8skRMtD4DnokDjYXH6B73WinYP?usp=sharing) , create one function called earthColab that generates all versions of the timeline csv files.
 
 Pass the earthColab function the column **Scope** as: Country, State, County
 
