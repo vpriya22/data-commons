@@ -32,7 +32,7 @@ Fix the following so we can update [/feed/view/#feed=water](/feed/view#feed=wate
 
 SPECS:
 
-In the [UN Goals Timelines CoLab](https://colab.research.google.com/drive/1LZC8ot8skRMtD4DnokDjYXH6B73WinYP?usp=sharing) create one function called earthColab that generates all versions of the timeline csv files.
+In the [UN Goals Timelines CoLab](https://colab.research.google.com/drive/1LZC8ot8skRMtD4DnokDjYXH6B73WinYP?usp=sharing) create a function called timelineGeneration that generates the timeline csv files. Pass it a string containing DCID files pulled from our Google Sheet UN Goal tabs.
 
 Pass the earthColab function the column **Scope** as: Country, State, County
 
