@@ -62,8 +62,7 @@ function loadGoalsDropdown() {
         //dp.data = makeRowValuesNumeric(data, dp.numColumns, dp.valueColumn);
         //dp.data = data;
 
-        
-        // TO DO: NEEDS WOK - this is a quick copy from another script.  Rewrite this...
+        // TO DO: NEEDS WORK - this is a quick copy from another script.  Rewrite this...
 
 
             // Loop through data
@@ -196,8 +195,16 @@ Our <a href="/data-pipeline/timelines/earthscape/datacommons.html#country=IN,CN,
   <div id="readmeDiv"></div><br>
 
   <hr>
-  TO DO: The following is pulled from the Google Sheet. Send the "Goals" tab list to a "goals" dropdown. Send the other tabs to the #chartVariable dropdown above. Include the DCID from each row.<br><br>
+  TO DO: Create an additional DropDown called #UNGoals using the loadGoalsDropdown() funtion in the current index.html page.
 
+  When the #UNGoals changes, update the #chartVariable dropdown with the the DCID from matching tab in the Google Sheet.<br><br>
+
+  Here's <a href="https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=0&single=true&output=csv">.csv for the "Air" tab</a><br><br>
+
+  #UNGoals dropdown > #chartVariable dropdown<br>
+  Goal (Air) > Topic (Emissions): Subtopic (Methane)<br><br>
+
+  Goals pulled from <a href="https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/edit?usp=sharing">Google Sheet</a>:<br><br>
   <div id="goalsDiv"></div>
 
 </div>

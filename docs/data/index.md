@@ -14,7 +14,6 @@ TO DO: Save .csv files to GitHub using tokens. - Ivy
 <!--
 Abhishek L may also have .ipynb files that generate .csv files locally. The output .csv could be sent to a fork of [data-commons](https://github.com/ModelEarth/data-commons) in a folder added at data-common/docs/data.
 -->
-UN Goals Timelines
 
 TO DO: Update our [Google Sheet UN Goal tabs](https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/edit?usp=sharing) with additional DCID values that we'll pull for our Python .csv file generation. - Everyone <!--Pratyush-->
 
@@ -22,11 +21,7 @@ TO DO: Update our [Google Sheet UN Goal tabs](https://docs.google.com/spreadshee
 TO DO: Also update our [Data Commons Timelines CoLab](https://colab.research.google.com/drive/1PF8wojIOHxDCdmadsAdkpHnb-An1ymEh?usp=sharing)
 -->
 
-TO DO: From the sheet columns, populate the #chartVariable dropdown.  Here's [.csv for the "Air" tab](https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=0&single=true&output=csv).  
-
-Goal (Air) > Topic (Emissions) > Subtopic (Methane)
-
-TO DO: [country.csv timeline output Abhishek created](https://github.com/ModelEarth/community-data/blob/master/locations/datacommons/country.csv) can be output to data-commons/docs/data/air/[dcid].csv.  
+TO DO: In the UN Goals Colab, the [country.csv timeline output Abhishek created](https://github.com/ModelEarth/community-data/blob/master/locations/datacommons/country.csv) can be output to data-commons/docs/data/air/[dcid].csv.  
 Then delete the country.csv file
 
 TO DO: The DCID value for the water UN Goal topics is: `dc/g/SDG_6`  
