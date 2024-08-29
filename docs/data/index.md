@@ -4,7 +4,7 @@
 
 Our [Map Filter Colab](https://colab.research.google.com/drive/1riRnKUGNGkJZOU6qJoznAxjySInQjnFQ?usp=sharing) outputs for one  for our [Map Nav](#geoview=country).
 
-TO DO: Update our [UN Goals CoLab](https://colab.research.google.com/drive/1LZC8ot8skRMtD4DnokDjYXH6B73WinYP?usp=sharing) to pull DCID's from our <a href="https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/edit?usp=sharing" target="googleUnGoals">Google Sheet Goal tabs</a> - Priyanka, Alexandra, everyone
+TO DO: Update our [UN Goals Timelines CoLab](https://colab.research.google.com/drive/1LZC8ot8skRMtD4DnokDjYXH6B73WinYP?usp=sharing) to pull DCID's from our <a href="https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/edit?usp=sharing" target="googleUnGoals">Google Sheet Goal tabs</a> - Priyanka, Alexandra, everyone
 
 TO DO: Save .csv files to GitHub using tokens. - Ivy
 <!--
@@ -37,7 +37,7 @@ Fix the following so we can update [/feed/view/#feed=water](/feed/view#feed=wate
 
 SPECS:
 
-In the [UN Goals CoLab](https://colab.research.google.com/drive/1LZC8ot8skRMtD4DnokDjYXH6B73WinYP?usp=sharing) , create one function called earthColab that generates all versions of the timeline csv files.
+In the [UN Goals Timelines CoLab](https://colab.research.google.com/drive/1LZC8ot8skRMtD4DnokDjYXH6B73WinYP?usp=sharing) create one function called earthColab that generates all versions of the timeline csv files.
 
 Pass the earthColab function the column **Scope** as: Country, State, County
 
