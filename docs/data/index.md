@@ -1,4 +1,4 @@
-[Data Commons](../)
+[Data Commons](../../)
 
 # UN Goal Timelines - Data Pull
 
