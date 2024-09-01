@@ -2,7 +2,7 @@
 
 # UN Goal Timelines - Data Pull
 
-TWO COLABS:
+Two Colabs:
 
 1. [Map Filter Colab](https://colab.research.google.com/drive/1riRnKUGNGkJZOU6qJoznAxjySInQjnFQ?usp=sharing) outputs for one year for our [Map Nav](#geoview=country). It includes Population, CO2 and Methane.
 
@@ -29,11 +29,12 @@ Then delete the country.csv file
 
 TO DO: The DCID value for the water UN Goal topics is: `dc/g/SDG_6`  
 Fix the following so we can update [/feed/view/#feed=water](/feed/view#feed=water) to pull the water nav DCID  
-`https://api.datacommons.org/v2/observation?key=AIzaSyCTI4Xz-UW_G2Q2RfknhcfdAnTHq5X5XuI&entity.dcids=dc/g/SDG_6`
 
----
+	https://api.datacommons.org/v2/observation?key=AIzaSyCTI4Xz-UW_G2Q2RfknhcfdAnTHq5X5XuI&entity.dcids=dc/g/SDG_6
 
-SPECS:
+
+
+**UN Goals CoLab Specs**
 
 In the [UN Goals Timelines CoLab](https://colab.research.google.com/drive/1LZC8ot8skRMtD4DnokDjYXH6B73WinYP?usp=sharing) create a function called timelineGeneration that generates the timeline csv files. Pass it a string containing DCID files pulled from our Google Sheet UN Goal tabs.
 

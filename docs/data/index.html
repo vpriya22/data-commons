@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-function loadGoalsDropdown() {
+function loadGoalsDropdown(theme,csvPath) {
 
     if (!onlineApp) {
       alert("onlineApp=false in localsite.js so not pulling from Google Sheet")
@@ -52,7 +52,7 @@ function loadGoalsDropdown() {
     loadScript(theroot + 'js/d3.v5.min.js', function(results) {
     waitForVariable('customD3loaded', function() {
     dp = {};
-    dp.googleCSV = "https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=456266073&single=true&output=csv";
+    dp.googleCSV = csvPath;
     consoleLog("Google data requested " + dp.googleCSV);
     //dp.googleCSV = "DISABLEX"
     d3.csv(dp.googleCSV).then(function(data,error) { // One element containing all rows from spreadsheet
@@ -62,37 +62,36 @@ function loadGoalsDropdown() {
         //dp.data = makeRowValuesNumeric(data, dp.numColumns, dp.valueColumn);
         //dp.data = data;
 
-        // TO DO: NEEDS WORK - this is a quick copy from another script.  Rewrite this...
-
-
-            // Loop through data
-            let goalsString = "";
-            for (let i = 0; i < data.length; i++) {
-              //console.log("Are we reaching hear with wastewater?");
-              if (data[i]) {
-                  console.log("data.key: ");
-                  console.log(data[i]);
-                  goalsString = goalsString + data[i].Goal + "<br>";
+        // Loop through data
+        let goalsString = "";
+        for (let i = 0; i < data.length; i++) {
+          //console.log("Are we reaching hear with wastewater?");
+          if (data[i]) {
+              console.log("data.key: ");
+              console.log(data[i]);
+              if (data[i].Title) {
+                goalsString = goalsString + data[i].Title + "<br>";
               }
-            }
-            $("#goalsDiv").html(goalsString);
+          }
+        }
+        $("#" + theme + "Div").html(goalsString);
 
-            // LOAD CATEGORIES TAB - Category, SubCategory, SubCategoryLong
-            //localObject.unGoals[dp.show] = makeRowValuesNumeric(data, dp.numColumns, dp.valueColumn);
-            
-            // Save to avoid repeat calls to Google Sheet tab
-            let tabName = "all"
+        // LOAD CATEGORIES TAB - Category, SubCategory, SubCategoryLong
+        //localObject.unGoals[dp.show] = makeRowValuesNumeric(data, dp.numColumns, dp.valueColumn);
+        
+        // Save to avoid repeat calls to Google Sheet tab
+        let tabName = "all"
 
-            if(typeof localObject == 'undefined') {
-                var localObject = {};
-            }
-            if(typeof localObject.unGoals == 'undefined') {
-                localObject.unGoals = {}; // From Google Sheet tabs.
-            }
-            localObject.unGoals[tabName] = data;
+        if(typeof localObject == 'undefined') {
+            var localObject = {};
+        }
+        if(typeof localObject.unGoals == 'undefined') {
+            localObject.unGoals = {}; // From Google Sheet tabs.
+        }
+        localObject.unGoals[tabName] = data;
 
-            console.log("UN Goal Google Sheet")
-            console.log(localObject.unGoals[tabName]); // Include color for mappoint at this point.
+        console.log("UN Goal Google Sheet")
+        console.log(localObject.unGoals[tabName]); // Include color for mappoint at this point.
           
     }, function(error, rows) {
         consoleLog("ERROR fetching google sheet. " + error);
@@ -100,7 +99,8 @@ function loadGoalsDropdown() {
     });
     });
 }
-loadGoalsDropdown();
+loadGoalsDropdown("goals","https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=456266073&single=true&output=csv");
+loadGoalsDropdown("air","https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=0&single=true&output=csv"); // "Air" tab
 </script>
 
 <style>
@@ -192,20 +192,25 @@ Our <a href="/data-pipeline/timelines/earthscape/datacommons.html#country=IN,CN,
   <canvas id="timelineChart"></canvas>
   <br>
 
-  <div id="readmeDiv"></div><br>
+  <div id="readmeDiv"></div>
 
-  <hr>
-  TO DO: Create an additional DropDown called #UNGoals using the loadGoalsDropdown() funtion in the current index.html page.
+  <b>TO DO: Dropdowns above timeline</b><br><br>
 
-  When the #UNGoals changes, update the #chartVariable dropdown with the the DCID from matching tab in the Google Sheet.<br><br>
+  Create a DropDown called #Goals using the loadGoalsDropdown() funtion in the current index.html page.<br><br>
 
-  Here's <a href="https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=0&single=true&output=csv">.csv for the "Air" tab</a><br><br>
+  When #Goals changes, update the #chartVariable dropdown with the the DCID from corresponding tab in the Google Sheet.<br><br>
 
-  #UNGoals dropdown > #chartVariable dropdown<br>
+  #Goals dropdown > #chartVariable dropdown<br>
   Goal (Air) > Topic (Emissions): Subtopic (Methane)<br><br>
 
   Goals pulled from <a href="https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/edit?usp=sharing">Google Sheet</a>:<br><br>
+
+  <b>UN Goals</b><br>
   <div id="goalsDiv"></div>
+  <br>
+
+  <b>Air Topics</b><br>
+  <div id="airDiv"></div>
 
 </div>
 
