@@ -4,7 +4,7 @@
 Let's find and apply for great paying jobs. Help us develop a [local job search using Serp](/feed/view/#feed=serp).  
 We're focusing on workforce automation and assistance that ends poverty while eliminating government debt.
 
-If you'd like to document you contributions, here's our spreadsheet.
+If you'd like to document your contributions, one option is to use our [times spreadsheet template](https://docs.google.com/spreadsheets/d/1wvw_xsFWnYE9z8nDQqmu1m2LB5TJEfy5VLkaFuEaCfk/edit?usp=sharing). Better yet, use a readme file instead so you can share an overview with reviewers and include links to your contributions.  (Fork our [contributors repo](https://github.com/ModelEarth/contributors) and document your contributions.)
 
 
 ## Data Commons API via Javascript
