@@ -2,7 +2,7 @@
 
 # Healthy Food
 
-Goal 2. Healthy Food, No Hunger and [GHG mitigation](/OpenFootprint/) - [balance repo](/balance/)
+Goal 2. Healthy Food, No Hunger and [GHG mitigation](/OpenFootprint/) - [balance repo](/balance/) - [Why Modern Food Lost its Nutrition](https://www.bbc.com/future/bespoke/follow-the-food/why-modern-food-lost-its-nutrients/)
 
 ## Food Nutrition Labels (YAML locally)
 
