@@ -29,11 +29,9 @@ To start, you can fetch all zip codes, counties, states, and countries using the
 - `get_zipcodes()`: Fetches the list of zip codes.
 - `get_countries()`: Fetches the list of countries.
 
-## II. Fetch Target 
+## II. Fetch Target
 
-### Method: `fetch_data_and_process_dpd(places, target_variable_dcid, api_key)`
-
-In this section, we will retrieve target variables using the `datacommons_pandas` package. This approach is organized and straightforward, as we have all the necessary DCIDs for the places within our specified scope. Depending on specific requirements, additional steps may be needed to clean and transform the DataFrame.
+In this section, we will retrieve target variables using the `datacommons_pandas` package. This approach is organized and straightforward, as we have all the necessary DCIDs for the places within our specified scope. The main method used is `fetch_data_and_process_dpd(places, target_variable_dcid, api_key, threshold=0.8)`, where the threshold parameter defaults to 20% but can be adjusted according to your needs. Depending on specific requirements, additional steps may be needed to clean and transform the DataFrame.
 
 The resulting DataFrame will include the following columns:
 
@@ -42,19 +40,63 @@ The resulting DataFrame will include the following columns:
 - **Target** (0/1): This column contains the classified value.
 - **Variable_DCID**: For instance, 'Count_Person', which contains the raw value.
 
-To meet different needs, you can easily create a new DataFrame with only the desired columns. The target variable is classified as follows:
+The target variable is classified based on a threshold that defaults to 20%:
 
 - **0** for values below the top 20%
 - **1** for values in the top 20%
 
-## III. Zipcode Data Level for ML
+To meet different needs, you can easily create a new DataFrame with only the desired columns.
 
-To ensure compliance of the DataFrame for machine learning applications, an additional step is required: convert the target variable in the second column into a *binary classification* based on a defined threshold, while retaining the first column as Zipcode.
-
-## IV. Appendix
+## III. Appendix
 
 Fetch zip-code data using the REST v2 API. This method is now deprecated and is included for reference only.
 
 ---
 
 **Important Note:** Always start by fetching the places within your specified scope, and then use the relevant fetch methods to obtain the corresponding data.
+
+## IV. How to Use the `scope_data_utils.py`
+
+The `scope_data_utils.py` module provides a set of utility functions for fetching and processing geographical data using the Google Data Commons API. This module allows users to classify target values based on specified thresholds and retrieve in-arcs for various geographic scopes, including zip codes, counties, states, and countries.
+
+### 1. Installation
+
+Before using the module, ensure you have the required packages installed. You can install them via pip:
+
+```bash
+pip install requests pandas datacommons_pandas
+```
+
+### 2. Importing the Module
+
+To use the functions in `scope_data_utils.py`, import the module in your Python script or Jupyter Notebook:
+
+```python
+from scope_data_utils import (
+    fetch_data_and_process_dpd,
+    get_zipcodes,
+    get_counties,
+    get_states,
+    get_countries,
+)
+```
+
+### 3. Example Usage
+
+```python
+import requests
+from scope_data_utils import fetch_data_and_process_dpd, get_zipcodes
+
+# Set your API key
+api_key = 'YOUR_API_KEY'
+
+# Fetch zip codes
+zipcodes = get_zipcodes(api_key)
+
+# Process data for a specific target variable
+target_variable_dcid = 'YOUR_TARGET_VARIABLE_DCID'
+data_df = fetch_data_and_process_dpd(zipcodes, target_variable_dcid, api_key)
+
+# Display the processed data
+print(data_df.head())
+```
