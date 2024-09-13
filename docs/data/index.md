@@ -10,6 +10,8 @@ Two Colabs:
 
 2. [UN Goals Timelines CoLab](https://colab.research.google.com/drive/1LZC8ot8skRMtD4DnokDjYXH6B73WinYP?usp=sharing) and DCIDs from our <a href="https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/edit?usp=sharing" target="googleUnGoals">Google Sheet UN goal tabs</a>
 
+Our util for scope data retrieval [scope-data-utils.py](https://github.com/ModelEarth/data-commons/blob/main/docs/data/python/scope-data-utils.py)
+
 TO DO: Update our UN Goals Colab to pull DCID's from our <a href="https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/edit?usp=sharing" target="googleUnGoals">Google Sheet Goal tabs</a> - Priyanka, Alexandra, everyone
 
 <!--
@@ -40,15 +42,13 @@ Fix the following so we can update [/feed/view/#feed=water](/feed/view#feed=wate
 
 **UN Goals CoLab Specs**
 
-In the [UN Goals Timelines CoLab](https://colab.research.google.com/drive/1LZC8ot8skRMtD4DnokDjYXH6B73WinYP?usp=sharing) create a function called timelineGeneration that generates the timeline csv files. Pass it a string containing DCID files pulled from our Google Sheet UN Goal tabs.
+In the [UN Goals Timelines CoLab](https://colab.research.google.com/drive/1LZC8ot8skRMtD4DnokDjYXH6B73WinYP?usp=sharing) create a function called timelineGeneration() that generates the timeline csv files. Pass it an object containing DCID values and their scopes - pulled from our Google Sheet UN Goal tabs.
 
-Pass the earthColab function the column **Scope** as: Country, State, County
+**Scope** values are: Country, State, County, Zip
 
-Convert from 3 to 2-char country codes.
+Apply the valid year range from the Google Sheet row in **StartYear** and **EndYear**
 
-Send rules in the function's parameters to identify which locations to omit (like which countries lack emissions data).
-
-Pull the valid year range from the Google Sheet row in **StartYear** and **EndYear**
+We could include an OmitLocations column if some countries lack emissions data.
 
 
 We'll send our .csv output to UN Goal subfolders at [data-commons/docs/data](https://github.com/ModelEarth/data-commons/tree/main/docs/data)
