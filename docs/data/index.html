@@ -140,8 +140,13 @@ function loadGoalsDropdown(theme,csvPath) {
     });
     });
 }
-loadGoalsDropdown("goals","https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=456266073&single=true&output=csv");
-loadGoalsDropdown("air","https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=0&single=true&output=csv"); // "Air" tab
+//loadGoalsDropdown("goals","https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=456266073&single=true&output=csv");
+
+// Copy the sheet URL and modify in this format
+
+loadGoalsDropdown("water","https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=2049347939&single=true&output=csv");
+
+loadGoalsDropdown("air","https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM5dyB-vQIXXZFJUMV3WRf_UmyLkRk/pub?gid=0&single=true&output=csv");
 </script>
 
 <style>
@@ -260,8 +265,14 @@ loadGoalsDropdown("air","https://docs.google.com/spreadsheets/d/1IGyvcMV5wkGaIWM
 
   <b>Air Topics</b><br>
   <div id="airDiv"></div>
-
   <br>
+
+  <b>Water Topics</b><br>
+  TO DO: Update the timeline above to also show <a href="/data-pipeline/timelines/earthscape/datacommons.html#country=IN,CN,US">Country Data</a><br><br>
+  
+  <div id="waterDiv"></div>
+  <br>
+
 
   <div id="githubPushDiv"></div>
 </div>
