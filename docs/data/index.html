@@ -17,6 +17,13 @@
 loadMarkdown("index.md", "readmeDiv", "_parent");
 loadMarkdown("/localsite/start/steps/github-push.md", "githubPushDiv", "_parent");
 
+document.addEventListener('hashChangeEvent', function (elem) {
+    console.log("timeline page detects URL hashChangeEvent");
+
+    // Call getTimelineChart here
+
+}, false);
+
 document.addEventListener('DOMContentLoaded', () => {
     let dcid_select = 'Count_Person';
     let showAll = 'showTop5';
